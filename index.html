@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning Trivia Game</title>
+    <script src="data/triviaQuestions.js" defer></script>
+    <script src="js/trivia.js" type="module" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1 class="neon-text">Machine Learning Trivia Game</h1>
+        <div id="navigation-buttons">
+            <button id="prev-button" class="neon-button">Previous</button>
+            <button id="new-game-button" class="neon-button" style="display: none;">New Game</button>
+            <button id="next-button" class="neon-button">Next</button>
+        </div>
+        <div id="question-container">
+            <p id="question" class="neon-text">Loading question...</p>
+            <form id="answers-form">
+                <!-- Radio buttons for answers will be inserted here by JavaScript -->
+            </form>
+        </div>
+    </div>
+</body>
+</html>

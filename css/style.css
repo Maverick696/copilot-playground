@@ -1,0 +1,65 @@
+body {
+    background-color: #0d0d0d;
+    color: fuchsia;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.neon-text {
+    color: #00ffff;
+    text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 40px #00ffff, 0 0 80px #00ffff;
+}
+
+.neon-button {
+    background-color: #0d0d0d;
+    border: 2px solid #ff00ff;
+    color: #ff00ff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.neon-button:hover {
+    background-color: #ff00ff;
+    color: #0d0d0d;
+    text-shadow: 0 0 5px #0d0d0d, 0 0 10px #0d0d0d, 0 0 20px #0d0d0d, 0 0 40px #0d0d0d, 0 0 80px #0d0d0d;
+}
+
+.neon-button.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#answers-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#answers-form input[type="radio"] {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+#game-container {
+    text-align: center;
+}
+
+#navigation-buttons {
+    margin-bottom: 20px;
+}
+
+.correct {
+    color: #00ff00;
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 40px #00ff00, 0 0 80px #00ff00;
+}
+
+.wrong {
+    color: #ff0000;
+    text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 40px #ff0000, 0 0 80px #ff0000;
+}
